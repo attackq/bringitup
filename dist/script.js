@@ -2846,7 +2846,7 @@ function () {
       off.querySelector('.plus').addEventListener('click', function () {
         if (count !== items.length - 2) {
           items[count].style.display = 'flex';
-          items[count].classList.add('fadeIn');
+          items[count].classList.add('animated', 'fadeIn');
           count++;
         } else {
           items[count].style.display = 'flex';
@@ -2860,7 +2860,6 @@ function () {
       obj.forEach(function (item, i, arr) {
         if (i !== arr.length - 1) {
           item.style.display = 'none';
-          item.classList.add('animated');
         }
       });
     }

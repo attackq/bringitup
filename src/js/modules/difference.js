@@ -13,7 +13,7 @@ export default class Difference {
         off.querySelector('.plus').addEventListener('click', () => {
             if (count !== items.length - 2) {
                 items[count].style.display = 'flex';
-                items[count].classList.add('fadeIn');
+                items[count].classList.add('animated','fadeIn');
                 count++;
             } else {
                 items[count].style.display = 'flex';
@@ -27,7 +27,6 @@ export default class Difference {
         obj.forEach((item, i, arr) => {
             if (i !== arr.length - 1) {
                 item.style.display = 'none';
-                item.classList.add('animated');
             }
         });
     }
